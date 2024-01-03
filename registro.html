@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Personagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header> Informações de Personagens </header>
+  <main>
+    <section class="formulario">
+      <form id="form">
+        <div>
+          <label for="name" class="labelInput">Nome do personagem</label>
+          <input type="text" name="nome" id="nome">
+          <span id="nomeError" class="error-msg"></span>
+        </div>
+        <div>
+          <label for="tendencia" class="labelInput">Tendência do Personagem</label>
+          <select id="tendencia" name="tendencia">
+            <option value="">----- Selecione a tendência do personagem ------</option>
+            <option value="Leal e Bom">Leal e Bom</option>
+            <option value="Leal e Neutro">Leal e Neutro</option>
+            <option value="Leal e Mau">Leal e Mau</option>
+            <option value="Neutro e Bom">Neutro e Bom</option>
+            <option value="Neutro">Neutro</option>
+            <option value="Neutro e Mau">Neutro e Mau</option>
+            <option value="Caótico e Bom">Caótico e Bom</option>
+            <option value="Caótico e Neutro">Caótico e Neutro</option>
+            <option value="Caótico e Mau">Caótico e Mau</option>
+          </select>
+          <span id="tendenciaError" class="error-msg"></span>
+        </div>
+
+        <h2 class="labelInput assistida">Gênero do Personagem</h2>
+
+        <div class="formLabel">
+          <label class="labelRadio">
+            <input type="radio" name="genero" value="Masculino" class="genero"> Masculino
+          </label>
+          <label class="labelRadio">
+            <input type="radio" name="genero" value="Feminino" class="genero"> Feminino
+          </label>
+          <label class="labelRadio">
+            <input type="radio" name="genero" value="Outro" class="genero"> Outro
+          </label>
+
+        </div>
+        <span id="generoError" class="error-msg"></span>
+        <div>
+          <label for="title" class="labelInput">Nota do personagem (1-10)</label>
+          <input type="number" name="nota" id="nota" max="10">
+          <span id="notaError" class="error-msg"></span>
+        </div>
+
+        <label for="msg" class="labelInput">Descrição</label>
+        <textarea id="descricao" name="descricao" rows="4" cols="50" class="descricao"></textarea>
+        <span id="descError" class="error-msg"></span>
+
+
+        <button type="submit" class="botaoForm">
+          Adicionar
+        </button>
+
+      </form>
+    </section>
+    <section class="catalogo" id="catalogo">
+      <h4></h4>
+    </section>
+  </main>
+  <script type="module" src="./registro.js"></script>
+</body>
+
+</html>
