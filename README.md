@@ -26,7 +26,7 @@ Para essa aplicação, é preferivel que se tenha um editor de texto próprio pa
 
     3.1 Copie o código que aparece na página
     
-    3.2 Nos arquivos "lista.js" e "registro.js", na variável URL, cole o código copiado no crud-crud, entre aspas, como o exemplo abaixo: 
+    3.2 Nos arquivos "lista.js" e "registro.js", na variável URL, cole o código copiado no crud-crud, entre aspas, como o exemplo abaixo: (não use esse código abaixo).
     
     ```javascript
     const URL = "https://crudcrud.com/api/b3a99f534bcf4994996eb9c585a9c3da/personagens";
