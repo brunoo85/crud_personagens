@@ -1,4 +1,4 @@
-const URL = "https://crudcrud.com/api/b3a99f534bcf4994996eb9c585a9c3da/personagens";
+const URL = "https://crudcrud.com/api/042db635a2814657823f8a083c47c1e9/personagens";
 
 async function getPersonagem() {
   const response = await fetch(URL);
@@ -80,6 +80,7 @@ const interval = setInterval(() => {
   getPersonagem().then((listaPersonagens) => {
     listaPersonagens.forEach(createPersonagem);
   });
+  console.log("consultou a lista");
 }, 5000);
 
 setTimeout(() => {

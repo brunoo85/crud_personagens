@@ -1,5 +1,5 @@
-const URL = "https://crudcrud.com/api/b3a99f534bcf4994996eb9c585a9c3da/personagens";
-console.log("entrou no js do registro");
+const URL = "https://crudcrud.com/api/042db635a2814657823f8a083c47c1e9/personagens";
+
 // import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 const generos = document.getElementsByClassName("genero");
@@ -20,7 +20,6 @@ async function getPersonagem(id) {
       }
     }
   }
-  console.log(personagem);
 }
 
 async function addPersonagem(objPersonagem) {
